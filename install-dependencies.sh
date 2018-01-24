@@ -1,5 +1,5 @@
 #!/bin/sh
-source config.sh
+./config.sh
 
 sudo apt-get install -y build-essential cmake pkg-config
 sudo apt-get install -y libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev
