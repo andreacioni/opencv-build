@@ -1,0 +1,6 @@
+language: cpp
+os: linux
+group: stable
+sudo: required
+
+install: ./install-dependencies.sh
