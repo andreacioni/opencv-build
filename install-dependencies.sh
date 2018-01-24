@@ -9,11 +9,11 @@ sudo apt-get install -y libxvidcore-dev libx264-dev
 sudo apt-get install -y libatlas-base-dev gfortran
 sudo apt-get install -y python$PYTHON_2_VERSION python$PYTHON_3_VERSION
 sudo apt-get install -y python-numpy python-scipy python-matplotlib
-sudo apt-get install -y default-jdk ant
+#sudo apt-get install -y default-jdk ant
 sudo apt-get install -y libgtkglext1-dev
 sudo apt-get install -y v4l-utils
 sudo apt-get install -y python2.7 python2.7-dev python3 python3-dev
-sudo apt-get install -y oracle-java8-set-default
+sudo apt-get install -y oracle-java8-set-default ant
 
 mkdir pip/
 cd pip
