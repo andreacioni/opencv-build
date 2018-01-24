@@ -2,9 +2,7 @@ language: cpp
 os: linux
 group: stable
 sudo: required
-env:
-  - ARCH=arm
 
 install: ./install-dependencies.sh
 
-script: echo "Hello"
+script: ./build-opencv.sh

@@ -17,7 +17,7 @@ sudo apt-get install -y python2.7 python2.7-dev python3 python3-dev
 sudo apt-get install -y oracle-java8-set-default ant
 
 #Used for cross-compiling
-apt-get install git rsync cmake ia32-libs
+#sudp apt-get install git rsync cmake ia32-libs
 
 #Intallink pip and numpy
 mkdir pip/
