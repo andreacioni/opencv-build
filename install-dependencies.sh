@@ -29,8 +29,13 @@ sudo python3 get-pip.py
 sudo pip install numpy
 sudo pip3 install numpy
 
-#Downloading OpenCV
+#Downloading OpenCV and OpenCV contrib
 cd ..
 git clone https://github.com/opencv/opencv.git
 cd opencv
 git checkout $OPENCV_VERSION
+
+cd ..
+git clone https://github.com/opencv/opencv_contrib.git
+cd opencv_contrib
+git checkout $OPENCV_CONTRIB_VERSION
