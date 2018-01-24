@@ -33,4 +33,4 @@ sudo pip3 install numpy
 cd ..
 git clone https://github.com/opencv/opencv.git
 cd opencv
-git checkuot $OPENCV_VERSION
+git checkout $OPENCV_VERSION
