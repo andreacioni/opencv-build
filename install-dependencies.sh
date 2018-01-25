@@ -20,7 +20,7 @@ sudo apt-get install -y oracle-java8-set-default ant
 sudo apt-get install build-essential automake autoconf libtool pkg-config libcurl4-openssl-dev intltool libxml2-dev libgtk2.0-dev libnotify-dev libglib2.0-dev libevent-dev checkinstall
 
 #Used for cross-compiling
-sudo apt-get install gcc-arm-linux-gnueabihf
+sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
 #git clone https://github.com/raspberrypi/tools.git
 
 #Intallink pip and numpy
