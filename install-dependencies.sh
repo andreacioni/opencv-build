@@ -21,7 +21,6 @@ sudo apt-get install gcc-arm-linux-gnueabihf
 #git clone https://github.com/raspberrypi/tools.git
 
 #Intallink pip and numpy
-cd ..
 mkdir pip/
 cd pip
 wget https://bootstrap.pypa.io/get-pip.py
