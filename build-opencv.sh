@@ -10,7 +10,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
 	-D BUILD_EXAMPLES=OFF \
 	-DSOFTFP=ON \
-	-DCMAKE_TOOLCHAIN_FILE=<path to the OpenCV source directory>/platforms/linux/arm-gnueabi.toolchain.cmake \
+	-DCMAKE_TOOLCHAIN_FILE=../platforms/linux/arm-gnueabi.toolchain.cmake \
 -D ENABLE_NEON=ON ..
 
 make -j7

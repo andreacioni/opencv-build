@@ -41,5 +41,3 @@ cd ..
 git clone https://github.com/opencv/opencv_contrib.git
 cd opencv_contrib
 git checkout $OPENCV_CONTRIB_VERSION
-
-dpkg -L gcc-arm-linux-gnueabihf
