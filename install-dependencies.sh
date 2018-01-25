@@ -17,9 +17,11 @@ sudo apt-get install -y python2.7 python2.7-dev python3 python3-dev
 sudo apt-get install -y oracle-java8-set-default ant
 
 #Used for cross-compiling
-#sudp apt-get install git rsync cmake ia32-libs
+sudo apt-get install gcc-arm-linux-gnueabihf
+#git clone https://github.com/raspberrypi/tools.git
 
 #Intallink pip and numpy
+cd ..
 mkdir pip/
 cd pip
 wget https://bootstrap.pypa.io/get-pip.py
@@ -39,3 +41,5 @@ cd ..
 git clone https://github.com/opencv/opencv_contrib.git
 cd opencv_contrib
 git checkout $OPENCV_CONTRIB_VERSION
+
+dpkg -L gcc-arm-linux-gnueabihf
