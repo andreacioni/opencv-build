@@ -11,4 +11,6 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	-D BUILD_EXAMPLES=OFF \
 -D ENABLE_NEON=ON ..
 
-make -j7
+make -j4
+
+sudo checkinstall
