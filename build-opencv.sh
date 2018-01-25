@@ -11,4 +11,4 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	-D BUILD_EXAMPLES=ON \
 -D ENABLE_NEON=ON ..
 
-make -j1
+make -j7
