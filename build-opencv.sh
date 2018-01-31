@@ -7,9 +7,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	-D CMAKE_INSTALL_PREFIX=/usr/local \
 	-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
 	-D BUILD_EXAMPLES=OFF \
-	#-DSOFTFP=ON \
 	-DCMAKE_TOOLCHAIN_FILE=../platforms/linux/arm-gnueabi.toolchain.cmake ..
-	#-D ENABLE_NEON=ON ..
 
 make -j8
 
