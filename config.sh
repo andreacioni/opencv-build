@@ -7,13 +7,13 @@ JAVA_SUPPORT=yes
 PYTHON_SUPPORT=yes
 
 #Deb creation
-PACKAGE_NAME="opencv"
+PACKAGE_NAME=opencv
 PACKAGE_VERSION=$OPENCV_VERSION
 PACKAGE_RELEASE=`date +%Y-%m-%d`
-PACKAGE_LICENSE="3-clause BSD License"
+PACKAGE_LICENSE=BSD
 #PACKAGE_ARCH= #Default
-PACKAGE_MANTEINER="andreacioni"
-INCLUDE_DOC="no"
-STRIP="yes"
-INSTALL_DEB="no"
+PACKAGE_MANTEINER=andreacioni
+INCLUDE_DOC=no
+STRIP=yes
+INSTALL_DEB=no
 #REQUIRE= #Dependencies will be added here

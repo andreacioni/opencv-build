@@ -12,4 +12,13 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 make -j7
 
 #Create .deb package
-checkinstall -D -y --nodoc --install=$INSTALL_DEB --pkgname=$PACKAGE_NAME --pkgversion=$PACKAGE_VERSION --pkgrelease=$PACKAGE_RELEASE --pkglicense=$PACKAGE_LICENSE
+checkinstall --default \
+--type debian --install=no \
+--pkgname "${PACKAGE_NAME}" \
+--pkgversion "${VERSION}" \
+--pkglicense "${PACKAGE_LICENSE}" \
+--deldoc --deldesc --delspec \
+--requires "libtesseract3,ffmpeg,libjasper1" \
+--pakdir ~ --maintainer "${MAINTAINER}" --provides "${PACKAGE_NAME}" \
+--addso --autodoinst \
+make install
