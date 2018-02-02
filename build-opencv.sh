@@ -1,4 +1,5 @@
 #!/bin/sh
+./config.sh
 
 mkdir opencv/build
 cd opencv/build
@@ -6,9 +7,9 @@ cd opencv/build
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	-D CMAKE_INSTALL_PREFIX=/usr/local \
 	-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
-	-D BUILD_EXAMPLES=OFF \
-	-DCMAKE_TOOLCHAIN_FILE=../platforms/linux/arm-gnueabi.toolchain.cmake ..
+	-D BUILD_EXAMPLES=OFF ..
 
-make -j8
+make -j7
 
-sudo checkinstall --install=no -y
+#Create .deb package
+sudo checkinstall -D -y --nodoc --install=$INSTALL_DEB --pkgname=$PACKAGE_NAME --pkgversion=$PACKAGE_VERSION --pkgrelease=$PACKAGE_RELEASE --pkglicense=$PACKAGE_LICENSE
