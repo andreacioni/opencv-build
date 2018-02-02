@@ -12,4 +12,4 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 make -j7
 
 #Create .deb package
-sudo checkinstall -D -y --nodoc --install=$INSTALL_DEB --pkgname=$PACKAGE_NAME --pkgversion=$PACKAGE_VERSION --pkgrelease=$PACKAGE_RELEASE --pkglicense=$PACKAGE_LICENSE
+checkinstall -D -y --nodoc --install=$INSTALL_DEB --pkgname=$PACKAGE_NAME --pkgversion=$PACKAGE_VERSION --pkgrelease=$PACKAGE_RELEASE --pkglicense=$PACKAGE_LICENSE
