@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 source ./config.sh
 
 #Used for OpenCV
