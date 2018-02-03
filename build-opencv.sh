@@ -1,5 +1,5 @@
 #!/bin/sh
-./config.sh
+source ./config.sh
 
 mkdir opencv/build
 cd opencv/build

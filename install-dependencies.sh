@@ -1,5 +1,5 @@
 #!/bin/sh
-./config.sh
+source ./config.sh
 
 #Used for OpenCV
 sudo apt-get install -y build-essential cmake pkg-config checkinstall
