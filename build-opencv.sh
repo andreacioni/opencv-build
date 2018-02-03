@@ -15,10 +15,13 @@ make -j7
 sudo checkinstall --default \
 --type debian --install=no \
 --pkgname "$PACKAGE_NAME" \
---pkgversion "$VERSION" \
+--pkgversion "$OPENCV_VERSION" \
+--pkgrelease "$PACKAGE_RELEASE" \
 --pkglicense "$PACKAGE_LICENSE" \
 --deldoc --deldesc --delspec \
 --requires "libtesseract3,ffmpeg,libjasper1" \
---pakdir ~ --maintainer "$MAINTAINER" --provides "$PACKAGE_NAME" \
+--pakdir ~ --maintainer "$PACKAGE_MANTEINER" --provides "$PACKAGE_NAME" \
 --addso --autodoinst \
 make install
+
+dpkg -c ~/opencv*.deb
