@@ -20,8 +20,10 @@ sudo checkinstall --default \
 --pkglicense "$PACKAGE_LICENSE" \
 --deldoc --deldesc --delspec \
 --requires "libtesseract3,ffmpeg,libjasper1" \
---pakdir ~ --maintainer "$PACKAGE_MANTEINER" --provides "$PACKAGE_NAME" \
+--maintainer "$PACKAGE_MANTEINER" --provides "$PACKAGE_NAME" \
 --addso --autodoinst \
 make install
 
-dpkg -c ~/opencv*.deb
+dpkg -c opencv*.deb
+
+mv opencv*.deb ~/opencv.deb
