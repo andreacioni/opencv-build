@@ -10,6 +10,6 @@ deploy:
   skip_cleanup: true  
   api_key:
     secure: VyfOaQ99vyqFcwXY5MgSUVPb5KwwHGYhuABs6IT6YWPzAmiEgOKgLgKp3vIGJwyTE5dFRf4+Epad2HjAWebG67Wz++9MBSd6lhqMpwRWAlWFWWpAv9zFd9B4+A1RsGX3aEJQqhE9EXrWEBxOVPD0yaz3JC8CTojQ8xl90dh3M/CCipiVrZVmUqEV4k3jKT45gu2ImNAN4KxLJwZjkVkTHOcUFFz3VB06tJgDVi6kH0Ik5GVJ5d9HZEW96K9WCP8LQPuoqYykT5aVkpJ0Q2OGkRnxYwPMs9m7YLQSaAqF/8SU4OSO1YRR2BZ8do660/+N6BnZrekxdtsgRX1s/B0JTmxPH0NFOCFD10bb5KKE+PtlHpsWctpdrCEhb8TV+LnGb+8pfKbbpElOoIHPHWLZI8dnGrhdYSvDcGUtuuIxvkILdQPmP7WWorTDVuxS/1IPUrKelRk/C8szo0UOukVEsFrUnTO9fAkozWCqQ4R+N0G7XPvKgMmcHenT3rFSQRLbW3Xb5UQCBel+LPNcFThQqZhui/aFgKTeV4mQlbPbH+L+S5FhuAR3vAf8+O7X1W8Xj2xs+LCRpOE3XeYo9DjbknPcHk948tom0b/uJrDqJNgWjA6N8eJJ/MfZrrOzWPEqyzdodLfy192q9AdEeO+MuQPPeTkYk2UzpcW4EovczjA=
-  file: "~/opencv.deb"
+  file: "opencv/build/opencv.deb"
   on:
     repo: andreacioni/opencv-build

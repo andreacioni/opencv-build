@@ -26,4 +26,4 @@ make install
 
 dpkg -c opencv*.deb
 
-mv opencv*.deb ~/opencv.deb
+mv opencv*.deb opencv.deb
